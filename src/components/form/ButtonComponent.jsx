@@ -1,6 +1,6 @@
 export default function ButtonComponent({ label, onClick, severity = "primary", isloading = false }) {
     return (
-        <div className="mb-3" style={{width: '100%'}}>
+        <div>
             <input
                 type="submit"
                 value={isloading ? "Loading..." : label}
