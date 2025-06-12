@@ -4,11 +4,7 @@ import AddVehiculeForm from "../components/form/AddVehiculeForm";
 import ToastService from "../services/ToastService";
 
 const Home = () => {
-  const [vehicules, setVehicules] = useState([
-    { type: "voiture", marque: "Peugeot", annee: 2020, couleur: "rouge", nbPortes: 5 },
-    { type: "camion", marque: "Renault", annee: 2018, couleur: "blanc", capacite: 12 },
-    { type: "moto", marque: "Yamaha", annee: 2022, couleur: "noir", cylindree: 600 }
-  ]);
+  const [vehicules, setVehicules] = useState([]);
 
 
   const handleAddVehicule = (vehicule) => {
