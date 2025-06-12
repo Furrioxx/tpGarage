@@ -1,0 +1,249 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Container général pour les pages et formulaires */
+.container {
+  max-width: 1900px;
+  margin: 2rem auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  padding: 2rem 2.5rem;
+  color:#213547
+}
+
+/* Marge basse pour les éléments de formulaire */
+.mb-3 {
+  margin-bottom: 1.5rem;
+}
+
+/* Boutons */
+.btn {
+  display: inline-block;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.25s;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: #646cff;
+  color: #fff;
+  border-color: #646cff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #535bf2;
+  border-color: #535bf2;
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover,
+.btn-danger:focus {
+  background-color: #b52a37;
+  border-color: #b52a37;
+  color: #fff;
+}
+
+.btn-warn {
+  background-color: #ffc107;
+  color: #212529;
+  border-color: #ffc107;
+}
+
+.btn-warn:hover,
+.btn-warn:focus {
+  background-color: #e0a800;
+  border-color: #e0a800;
+  color: #212529;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: #fff;
+  border-color: #6c757d;
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus {
+  background-color: #565e64;
+  border-color: #565e64;
+  color: #fff;
+  outline: none;
+}
+
+/* Labels de formulaire */
+.form-label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  text-align: left;
+  color: #213547;
+}
+
+/* Champs de formulaire */
+.form-control {
+  width: 100%;
+  padding: 0.6em 1em;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1em;
+  background: #f9f9f9;
+  color: #213547;
+  box-sizing: border-box;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.2s;
+}
+
+.form-control:focus {
+  border-color: #646cff;
+  outline: none;
+  background: #fff;
+}
+
+/* Navigation */
+nav {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+nav a {
+  color: #646cff;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.3em 0.8em;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+  background: #e7e9ff;
+  color: #535bf2;
+}
+
+/* Titres */
+h1 {
+  font-size: 2.2em;
+  margin-bottom: 1rem;
+  color: #213547;
+}
+
+/* Toast notifications */
+.toast {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  min-width: 220px;
+  padding: 1em 1.5em;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1em;
+  z-index: 9999;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+  opacity: 0.97;
+  animation: toast-in 0.3s;
+}
+@keyframes toast-in {
+  from { opacity: 0; transform: translateY(-20px);}
+  to { opacity: 0.97; transform: translateY(0);}
+}
+.toast-success {
+  background: #28a745;
+}
+.toast-danger {
+  background: #dc3545;
+}
+.toast-warn {
+  background: #ffc107;
+  color: #212529;
+  border: 1px solid #ffc107;
+}
+
+/* Alerts */
+.alert {
+  padding: 1em 1.2em;
+  margin-bottom: 1.2em;
+  border-radius: 6px;
+  font-size: 1em;
+  font-weight: 500;
+  border: 1px solid transparent;
+  background: #f8d7da;
+  color: #842029;
+}
+
+.alert-danger {
+  background: #f8d7da;
+  color: #842029;
+  border-color: #f5c2c7;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 1rem;
+  }
+  nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
